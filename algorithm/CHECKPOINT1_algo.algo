@@ -1,0 +1,24 @@
+ALGORITHM Checkpoint1
+VAR
+   Sentence:STRING;
+   i:INTEGER;
+   count1, count2, count3 :INTEGER;
+//count1:=the number of characters
+//count2:=the number of words
+//count3:=the number of vowels   
+BEGIN
+    Sentence="le graphene est un materiau bidimensionnel"
+    count2:=1;
+// Words+characters
+    WHILE (Sentence[j]<> ".") DO
+        count1++;
+        if(Sentence[j]=' ') THEN
+          count1++;
+        END_IF
+//Vowels
+        IF (Sentence[i]=="a" or Sentence[i]=="e"  or Sentence[i]=="i" or Sentence[i]=="o" or Sentence[i]=="u") THEN
+            count3++;
+        END_IF
+        
+    END_WHILE
+END
